@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us & Reviews</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #FFF9C4;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #070707;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    form {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      display: inline-block;
+      width: 100%;
+      max-width: 600px;
+      border: 3px solid #FFD700;
+      transition: transform 0.3s ease-in-out;
+    }
+    form:hover {
+      transform: scale(1.03);
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 2px solid #FFD700;
+      border-radius: 8px;
+      outline: none;
+      transition: border 0.3s;
+    }
+    input:focus, textarea:focus {
+      border: 2px solid #f1c40f;
+    }
+    button {
+      background: #FFD700;
+      color: #333;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #f1c40f;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <form action="#" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+    <input type="email" name="email" placeholder="Your Email" required><br><br>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br><br>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <h1 class="mt-10">Reviews</h1>
+  <form action="#" method="POST">
+    <input type="text" name="reviewer" placeholder="Your Name" required><br><br>
+    <textarea name="review" placeholder="Your Review" rows="5" required></textarea><br><br>
+    <button type="submit">Submit Review</button>
+  </form>
+</body>
+</html>
